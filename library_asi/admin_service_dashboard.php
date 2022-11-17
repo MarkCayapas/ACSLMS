@@ -156,7 +156,7 @@ elseif($msg=="fail"){
             <label>Detail:</label><input  type="text" name="bookdetail"/></br>
             <label>Autor:</label><input type="text" name="bookaudor"/></br>
             <label>Publication</label><input type="text" name="bookpub"/></br>
-            <div>Branch:<input type="radio" name="branch" value="other"/>other<input type="radio" name="branch" value="BSIT"/>BSIT<div style="margin-left:80px"><input type="radio" name="branch" value="BSCS"/>BSCS<input type="radio" name="branch" value="BSSE"/>BSSE</div>
+            <div>Branch:<input type="radio" name="branch" value="other"/>other<input type="radio" name="branch" value="BSIT"/>BSIT<div style="margin-left:80px"><input type="radio" name="branch" value="BSCS"/>BSCS</div>
             </div>   
             <label>Price:</label><input  type="number" name="bookprice"/></br>
             <label>Quantity:</label><input type="number" name="bookquantity"/></br>

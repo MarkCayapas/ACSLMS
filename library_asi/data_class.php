@@ -214,10 +214,10 @@ class data extends db {
         }
 
         if($usertype=="student"){
-            $days=7;
+            $days=1;
         }
         if($usertype=="teacher"){
-            $days=21;
+            $days=2;
         }
 
 

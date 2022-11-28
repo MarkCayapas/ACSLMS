@@ -9,8 +9,8 @@ $bookid=$_GET['bookid'];
 
 
 
-$obj=new data();
-$obj->setconnection();
-$obj->requestbook($userid,$bookid);
+$data=new data();
+$data->setconnection();
+$data->requestbook($userid,$bookid);
 
 ?>

@@ -13,6 +13,6 @@ $days= $_GET['days'];
 
 $returnDate=Date('d/m/Y', strtotime('+'.$days.'days'));
 
-$obj=new data();
-$obj->setconnection();
-$obj->issuebookapprove($book,$userselect,$days,$getdate,$returnDate,$request);
+$data=new data();
+$data->setconnection();
+$data->issuebookapprove($book,$userselect,$days,$getdate,$returnDate,$request);

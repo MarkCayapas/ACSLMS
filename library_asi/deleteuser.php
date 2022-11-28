@@ -4,6 +4,6 @@ include("data_class.php");
 $delteuser=$_GET['useriddelete'];
 
 
-$obj=new data();
-$obj->setconnection();
-$obj->delteuserdata($delteuser);
+$data=new data();
+$data->setconnection();
+$data->delteuserdata($delteuser);

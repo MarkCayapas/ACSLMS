@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,7 +10,7 @@
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- <link rel="stylesheet" href="style.css"> -->
+
     </head>
     <style>
         .innerright,label {
@@ -133,11 +130,11 @@ elseif($msg=="fail"){
                 $table.="<td>$row[4]</td>";
                 $table.="<td>$row[5]</td>";
                 $table.="<td>$row[6]</td>";
-               // $table.="<td><a href='approvebookrequest.php?reqid=$row[0]&book=$row[5]&userselect=$row[3]&days=$row[6]'><button type='button' class='btn btn-primary'>Approved BOOK</button></a></td>";
+               
                  $table.="<td><a href='approvebookrequest.php?reqid=$row[0]&book=$row[5]&userselect=$row[3]&days=$row[6]'>Approved</a></td>";
-                // $table.="<td><a href='deletebook_dashboard.php?deletebookid=$row[0]'>Delete</a></td>";
+                
                 $table.="</tr>";
-                // $table.=$row[0];
+               
             }
             $table.="</table>";
 
@@ -210,9 +207,9 @@ elseif($msg=="fail"){
                 $table.="<td>$row[1]</td>";
                 $table.="<td>$row[2]</td>";
                 $table.="<td>$row[4]</td>";
-                // $table.="<td><a href='deleteuser.php?useriddelete=$row[0]'>Delete</a></td>";
+            
                 $table.="</tr>";
-                // $table.=$row[0];
+          
             }
             $table.="</table>";
 
@@ -244,9 +241,9 @@ elseif($msg=="fail"){
                 $table.="<td>$row[7]</td>";
                 $table.="<td>$row[8]</td>";
                 $table.="<td>$row[4]</td>";
-                // $table.="<td><a href='otheruser_dashboard.php?returnid=$row[0]&userlogid=$userloginid'>Return</a></td>";
+                
                 $table.="</tr>";
-                // $table.=$row[0];
+               
             }
             $table.="</table>";
 
@@ -363,9 +360,9 @@ issue book -->
                 $table.="<td>$row[9]</td>";
                 $table.="<td>$row[10]</td>";
                 $table.="<td><a href='admin_service_dashboard.php?viewid=$row[0]'><button type='button' class='btn btn-primary'>View BOOK</button></a></td>";
-                // $table.="<td><a href='deletebook_dashboard.php?deletebookid=$row[0]'>Delete</a></td>";
+               
                 $table.="</tr>";
-                // $table.=$row[0];
+                
             }
             $table.="</table>";
 

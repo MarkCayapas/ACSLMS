@@ -1,5 +1,5 @@
 <?php
-//addserver_page.php
+
 include("data_class.php");
 
 
@@ -18,9 +18,9 @@ if (move_uploaded_file($_FILES["bookphoto"]["tmp_name"],"uploads/" . $_FILES["bo
 
     $bookpic=$_FILES["bookphoto"]["name"];
 
-$obj=new data();
-$obj->setconnection();
-$obj->addbook($bookpic,$bookname,$bookdetail,$bookaudor,$bookpub,$branch,$bookprice,$bookquantity);
+$data=new data();
+$data->setconnection();
+$data->addbook($bookpic,$bookname,$bookdetail,$bookaudor,$bookpub,$branch,$bookprice,$bookquantity);
   } 
   else {
      echo "File not uploaded";

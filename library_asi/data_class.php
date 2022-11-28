@@ -165,7 +165,7 @@ class data extends db {
     }
 
     function getbook() {
-        $q="SELECT * FROM book ";
+        $ ="SELECT * FROM book ";
         $data=$this->connection->query($q);
         return $data;
     }
@@ -266,13 +266,9 @@ class data extends db {
     
             header("Location:otheruser_dashboard.php?userlogid=$userid");
          }
-        //  else{
-        //     header("Location:otheruser_dashboard.php?msg=fail");
-        //  }
+        
         }
-        // if($fine!=0){
-        //     header("Location:otheruser_dashboard.php?userlogid=$userid&msg=fine");
-        // }
+     
        
 
     }
@@ -314,7 +310,6 @@ class data extends db {
             return $data;
         }
 
-      // issue issuebookapprove
       function issuebookapprove($book,$userselect,$days,$getdate,$returnDate,$redid){
         $this->$book= $book;
         $this->$userselect=$userselect;
@@ -336,7 +331,7 @@ class data extends db {
                 $issueid=$row['id'];
                 $issuetype=$row['type'];
 
-                // header("location: admin_service_dashboard.php?logid=$logid");
+        
             }
             foreach($recordSetss->fetchAll() as $row) {
                 $bookid=$row['id'];
@@ -379,7 +374,6 @@ class data extends db {
 
     }
     
-    // issue book
     function issuebook($book,$userselect,$days,$getdate,$returnDate){
         $this->$book= $book;
         $this->$userselect=$userselect;
@@ -401,7 +395,7 @@ class data extends db {
                 $issueid=$row['id'];
                 $issuetype=$row['type'];
 
-                // header("location: admin_service_dashboard.php?logid=$logid");
+
             }
             foreach($recordSetss->fetchAll() as $row) {
                 $bookid=$row['id'];
